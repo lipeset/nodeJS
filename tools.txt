@@ -1,0 +1,13 @@
+EXPRESS = um framework NodeJS para aplicações web. Ele já implementa
+uma API e diversos métodos para manipular de forma muito mais fácil
+funções do NodeJS para controle de rotas por exemplo ou o controle dos
+middlewares; dos módulos que estão entre a requisição e a resposta. Ou
+seja, diversos recursos para agilizar o desenvolvimento.
+
+EJS = uma linguagem de modelagem para criação de páginas HTML utilizando
+JavaScript.
+
+NODEMON = um utilitário que reinicia automaticamente o servidor NodeJS
+quando houver qualquer alteração em nossos scripts.
+
+NPM = um gerenciador de pacotes JavaScript.
