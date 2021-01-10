@@ -16,7 +16,10 @@ Como sempre, iremos utilizar o NPM para a instalação desse novo recurso.
 Então digite o comando "npm install -g nodemon@1.10.2". Repare que nós 
 escolhemos a versão a ser instalada, isso porque, no curso foi 
 utilizada essa versão. Então para evitar erro de compatibilidade, 
-mantivemos a mesma versão.*/
+mantivemos a mesma versão.
+
+Agora, para subirmos o nosso servidor, ao invés de usarmos o comando
+"node app_x.js", iremos utilizar "nodemon app_x.js".*/
 
 var express = require('express');
 var app = express();
