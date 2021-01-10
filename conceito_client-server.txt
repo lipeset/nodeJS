@@ -1,0 +1,28 @@
+Algo muito importante para o desenvolvimento web, é a compreensão do conceito
+client-server (ou cliente-servidor).
+
+Basicamente falando, o servidor é uma aplicação com diversos serviços que podem
+ser requisitados por outras aplicações. O cliente por sua vez, é uma aplicação
+capaz de requisitar serviços a uma aplicação servidora. Geralmente aplicações
+cliente e aplicações servidoras, estão instaladas em computadores distintos e
+se comunicam através de uma rede de computadores (internet).
+
+Mas por se tratarem de aplicações, nada impede que aplicações clientes e aplicações
+servidoras, co-existam no mesmo computador, inclusive isso é muito comum no estágio
+de desenvolvimento dessas aplicações.
+
+Para que seja possível estabelecer esta comunicação entre uma aplicação cliente
+e uma aplicação servidora, é necessário que ambas obedeçam algumas regras de 
+troca de mensagens ou seja, é necessário estabelecer um padrão, um protocolo
+de comunicação. 
+
+No universo de aplicações web, isso não é diferente. Do lado do cliente estão
+os browsers (chrome, firefox, etc) e do lado do servidor, estão os servidores 
+web, conhecidos também como servidores HTTP (apache, tomcat, etc).
+
+A dinâmica é simples, a aplicação do lado do cliente, é responsável por realizar
+uma requisição (uma REQUEST) para a aplicação servidora. A aplicação servidora
+por sua vez, recebe essa solicitação, realiza todas as tratativas necessárias e
+ao término dessas tratativas, o servidor envia uma resposta (um RESPONSE) a
+aplicação cliente. Desta forma, a aplicação cliente (no caso o browser) é capaz
+de processar a resposta e exibir os dados em tela.
