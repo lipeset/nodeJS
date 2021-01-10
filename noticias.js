@@ -28,7 +28,20 @@ passamos funções como argumentos dos métodos, neste caso, não será
 diferente.
 Variável REQ = recebe a requisição
 Variável RES = envia a resposta
-Método .END() = é a resposta enviada ao servidor*/
-http.createServer(function(req, res){
+Método .END() = é a resposta enviada ao servidor
+Porém, isso ainda não é o suficiente, temos de adicionar qual a
+porta que nosso servidor irá responder.
+Isso pode ser feito de duas formas: adicionando o médoto
+.LISTEN(PORTA) ao final da nossa função, ou como utilizamos abaixo,
+atribuindo o servidor a uma variável e utilizando o .LISTEN()
+separado*/
+var server = http.createServer(function(req, res){
     res.end("<html><body>Portal de notícias</body></html>")
 });
+
+/*listen() = Utilizado para definir qual a porta padrão nosso 
+servidor irá responder. Dessa forma, basta rodar o comando
+node nome_arquivo no shell de comando e enviar uma request ao
+endereço LOCALHOST:3000, irá receber a resposta contida na variável
+server (res.end(resposta)).*/
+server.listen(3000);
