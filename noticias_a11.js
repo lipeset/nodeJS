@@ -43,12 +43,7 @@ a ser instalada, isso porque, no curso foi utilizada essa versão. Então
 para evitar erro de compatibilidade, mantivemos a mesma versão. O comando
 "-save" serve para que seja salvo a instalação do EXPRESS no nosso 
 projeto, não sendo necessário uma nova instalação. Se tudo ocorreu da 
-forma correta, agora temos uma pasta chamada "node_modules".
-
-Com tudo instalado, vamos refatorar o nosso código para usarmos os novos
-recursos instalados. Posteriormente, poderemos comparar este arquivo com
-o arquivo "noticias_a9" para termos ideia da grande diferença é trabalhar
-com ferramentas e trabalhar com JavaScript puro.*/
+forma correta, agora temos uma pasta chamada "node_modules".*/
 
 var http = require('http');
 
