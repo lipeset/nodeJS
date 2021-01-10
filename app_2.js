@@ -31,12 +31,12 @@ app.set('view engine', 'ejs');
 .RENDER(). A ideia também, é que exista uma pasta de nome "views" e dentro
 dessa pasta, você separe outras pastas com partes do seu projeto, para que
 tudo seja organizado de uma maneira independente.*/
-app.get('/', function(req, res){
-    res.send("<html><body>Portal de notícias</body></html>");
+app.get('/tecnologia', function(req, res){
+    res.render("secao/tecnologia");
 });
 
-app.get('/tecnologia', function(req, res){
-    res.send("<html><body>Notícias de tecnologia</body></html>");
+app.get('/', function(req, res){
+    res.send("<html><body>Portal de notícias</body></html>");
 });
 
 app.listen(3000, function(){
