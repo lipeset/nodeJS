@@ -1,12 +1,41 @@
+/*Aqui iremos aprender como implementamos o NPM e as outras ferramentas
+na nossa aplicação. Também iremos refatorar o código montado na
+aula 9 (noticias_a9), para se adaptar as novas bibliotecas inseridas
+
+Inicialmente, checamos a versão do NPM digitando o comando "npm -v" no
+prompt de comando.
+
+Feito isso, iniciamos o NPM no nosso projeto. Para isso, nós iremos
+digitar o comando "npm init". Ele é um passo a passo para que seja
+configurado o nosso projeto, são eles:
+
+name - nome do nosso projeto (nosso módulo)
+version - versão do projeto, a sugerida pelo NPM
+description - a descrição do projeto
+entry point - ponto de entrada e lógica principal do módulo. Como estamos
+              trabalhando com sistema web, isso não é tão importante. 
+              Mas se nosso objetivo fosse disponibilizar um módulo
+              para que outras pessoas pudessem incorporar em seus projetos,
+              isso seria importante. Definir o entry point é definir o 
+              ponto de entrada para que outras pessoas pudessem utilizar
+              isso como se fosse uma biblioteca. Utilizar o arquivo
+              principal.
+test command - esse comando você irá utilizar para testar o seu código.
+               Basta deixa-lo em branco.
+git repository - link do repositório no github. Por ora, iremos deixar
+                 em branco.
+keywords - Palavra chave para encontrar o projeto. Também em branco.
+author - o nome do autor do projeto.
+license - deixar a sugerida <ISC>.
+
+Feito isso, o NPM irá perguntar se está tudo e mostra como ficara o
+nosso arquivo package.json. Caso esteja de acordo, basta digitar "yes".
+
+Sendo assim, o NPM foi iniciado no nosso projeto, agora podemos instalar
+as outras ferramentas.*/
+
 var http = require('http');
 
-/*Como visto no arquivo noticias_a8, nosso servidor não é capaz de
-entender o que está vindo das URLS, de tal modo que, quando utilizamos
-outro endereço (localhost:3000/exemplo), é retornado a mesma response.
-Veremos agora como podemos mapear as URLS e responder de acordo com
-cada solicitação.
-Variável CATEGORIA = captura a URL solicitada e a utilizamos para 
-checar qual response será enviado, da forma correta.*/
 var server = http.createServer(function(req, res){
     var categoria = req.url;
 
@@ -21,16 +50,3 @@ var server = http.createServer(function(req, res){
     }
 });
 server.listen(3000);
-
-/*Da forma que montamos acima, conseguimos mapear manualmente, quais as
-URLS existentes e responder de acordo com a solicitação. Embora essa não
-seja a melhor maneira de faze-lo, também é possível dessa forma.
-
-Também é importante lembrar que é necessário derrubar o servidor e
-executa-lo novamente. Embora o JavaScript seja uma linguagem interpretada,
-quando nós ativamos uma instância do NodeJS, ele recupera todos os arquivos
-naquele estado e cria um processo dentro do NodeJS. Então toda alteração
-que é feita, após o servidor estar funcionando, é necessário que seja
-reiniciado o servidor. No nosso caso, não estamos trabalhando com threads
-e sim com forks, ou seja, um processo dentro do próprio NodeJS, por isso
-é necessário sua reinicialização.*/
