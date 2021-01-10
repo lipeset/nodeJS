@@ -1,0 +1,31 @@
+O NodeJS é um interpretador de códigos JavaScript.
+Foi construído com base no V8 JavaScript Engine do Chrome.
+
+O NodeJS é escrito em C++.
+
+Antes a interpretação dos códigos JavaScript ficavam a cargo dos
+navegadores, dos browsers, agora com o uso do NodeJS nós podemos
+trazer esta realidade para aplicações desktop, ou seja, a partir
+da instalação do NodeJS em nossos computadores, tornou-se possível
+escrever aplicações totalmente em JavaScript, bastando apenas
+submeter os scripts para o NodeJS para que ele interprete os comandos
+para que ele converta tais comandos em linguagem de máquina, permitindo
+portanto, o controle de recursos do sistema operacional.
+
+Do ponto de vista do desenvolvimento web, o NodeJS implementa diversos
+recursos que o tornam capaz de responder a diversos tipos de protocolos
+diferentes.
+Dentre estes protocolos está o HTTP.
+
+Isso significa que apesar do NodeJS não ser um servidor HTTP propriamente
+dito, é possível implementar os recursos necessários para que a nossa
+aplicação seja capaz de responder a requisições feitas a partir deste
+protocolo.
+
+Essa nova abordagem fez nascer uma nova técnica para a criação de
+aplicações web, onde com apenas uma linguagem de programação, no caso
+o JavaScript, é possível criar tanto scripts para o front-end quanto
+scripts para o back-end.
+
+Apesar de esta ter sido uma das inovações do NodeJS, trazer a linguagem
+de programação JavaScript para o back-end, esta não foi a única inovação.
