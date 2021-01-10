@@ -5,9 +5,16 @@ middlewares; dos módulos que estão entre a requisição e a resposta. Ou
 seja, diversos recursos para agilizar o desenvolvimento.
 
 EJS = uma linguagem de modelagem para criação de páginas HTML utilizando
-JavaScript.
+JavaScript. Uma forma dinâmica de geração de páginas HTML com o uso de
+JavaScript. Muito importante pois dessa forma, conseguiremos separar
+as views dos nossos scripts de controle.
 
 NODEMON = um utilitário que reinicia automaticamente o servidor NodeJS
-quando houver qualquer alteração em nossos scripts.
+quando houver qualquer alteração em nossos scripts. Então ao invés de 
+abrirmos o prompt de comando, powerShell ou qualquer outro terminal para
+reiniciarmos manualmente, basta implementar o NODEMON, que ele irá
+identificar as alterações assim que salvarmos e sozinho irá reiniciar o 
+nosso servidor.
 
-NPM = um gerenciador de pacotes JavaScript.
+NPM = um gerenciador de pacotes JavaScript. A gente consegue de forma
+muito simples adicionar módulos a nossa aplicação utilizando o NPM.
