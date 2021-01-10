@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lipeset/nodeJS/issues"
   },
-  "homepage": "https://github.com/lipeset/nodeJS#readme"
+  "homepage": "https://github.com/lipeset/nodeJS#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }

@@ -32,7 +32,17 @@ Feito isso, o NPM irá perguntar se está tudo e mostra como ficara o
 nosso arquivo package.json. Caso esteja de acordo, basta digitar "yes".
 
 Sendo assim, o NPM foi iniciado no nosso projeto, agora podemos instalar
-as outras ferramentas.*/
+as outras ferramentas.
+
+---------------------------------------
+
+Para instalarmos agora o EXPRESS, continuaremos no nosso diretório 
+principal (onde instalamos o NPM) e digitamos o seguinte comando
+"npm install express@4.15.3 -save". Repare que nós escolhemos a versão
+a ser instalada, isso porque, no curso foi utilizada essa versão. Então
+para evitar erro de compatibilidade, mantivemos a mesma versão. O comando
+"-save" serve para que seja salvo a instalação do EXPRESS no nosso 
+projeto, não sendo necessário uma nova instalação.*/
 
 var http = require('http');
 
