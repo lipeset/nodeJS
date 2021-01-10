@@ -1,0 +1,19 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "Portal de notícias",
+  "main": "noticias_a11.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lipeset/nodeJS.git"
+  },
+  "author": "Felipe Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lipeset/nodeJS/issues"
+  },
+  "homepage": "https://github.com/lipeset/nodeJS#readme"
+}
