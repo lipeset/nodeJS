@@ -15,10 +15,10 @@ nossa vida com o seu método .GET(). Também passamos como parâmetro, uma funç
 e devolve uma RESPONSE, igual tinhamos no arquivo "noticias_a11", 
 porém a função agora passada como parâmetro. Outra diferença é, enquanto
 utilizavámos o método .END() para responder ao servidor, com o EXPRESS
-nós utilizamos o método .SEND(), dessa forma, podemos enviar respostas
-ou arquivos (views) para que sejam respondidas ao cliente.
-Como primeiro parâmetro temos nossa URL, nosso endereço de browser e como
-segundo parâmetro a função que irá tratar da resposta ao servidor*/
+nós utilizamos o método .SEND(), dessa forma, podemos enviar respostas ao 
+cliente. Como primeiro parâmetro temos nossa URL, nosso endereço de 
+browser e como segundo parâmetro a função que irá tratar da resposta 
+ao servidor*/
 app.get('/', function(req, res){
     res.send("<html><body>Portal de notícias</body></html>")
 });
