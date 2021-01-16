@@ -8,7 +8,7 @@ não perde tempo procurando a origem do módulo.*/
 que fizemos ao importar o EXPRESS e executamos a função dele na variável
 'app', temos que executar a função do módulo. No console.log abaixo
 iremos mostrar a execução.*/
-var msg = require('../mod_test');
+var msg = require('./mod_test');
 
 var app = express();
 
