@@ -2,7 +2,7 @@
 servidor. Como o configuramos para exportar um módulo, podemos
 importa-lo da mesma forma que importamos o EXPRESS.*/
 
-var app = require('./config/server');
+var app = require('../config/server');
 
 app.get('/', function(req, res){
     res.render("home/index");
