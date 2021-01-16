@@ -10,3 +10,7 @@ conseguimos passar para ele um parâmetro, que é a nossa intenção nesse
 momento.*/
 var rotaHome = require('./app/routes/home');
 rotaHome(app);
+
+app.listen(function(){
+    console.log('Servidor ON');
+});
