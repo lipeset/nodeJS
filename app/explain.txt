@@ -1,0 +1,8 @@
+A criação de vários diretórios se dá pela organização do código.
+Conforme você cria vários diretórios a fim de modularizar o seu
+projeto e desacoplá-lo, seu funcionamento modular melhora. Também
+existe um ganho na parte de manutenção do código e seu escalonamento.
+
+Podemos implementar novas funcionalidades sem quebrar outras partes
+do código que não teriam ligação alguma com a nova função. Essa é
+apenas uma das vantagens de ter o código amplamente modularizado.
