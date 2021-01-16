@@ -23,7 +23,9 @@ app.listen(3000, function(){
     console.log('Servidor ON');
 });
 
+//---------------------------------------------------------------------//
 /*Para instalarmos o banco de dados, iremos utilizar o NPM, já que 
 o MySQL, que utilizaremos, é também importado como um módulo. Para isso
 vamos digitar o comando 'npm install mysql@2.13.0 --save', para instalar
-a versão compatível com essa aplicação.*/
+a versão compatível com essa aplicação. Feito isso, já é possível
+encontrar o diretório 'mysql' no diretório 'node_modules'.*/
