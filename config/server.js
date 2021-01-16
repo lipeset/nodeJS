@@ -16,4 +16,13 @@ var express = require('express');
 var app = express();
 app.set('view engine', 'ejs');
 
+/*Como nós movimentamos o diretório 'views' para dentro do diretório
+'app', precisamos configurar o EXPRESS para que ele procure as views
+no local correto. É importante tomarmos muito cuidado em fazer essa
+configuração, pois a propriedade setada abaixo, irá pesquisar A PARTIR
+de onde o módulo está sendo utilizado, ou seja, o arquivo 'app.js' está
+no diretório 'NODEJS', logo, a propriedade irá buscar a partir desse
+nível para baixo (para dentro). Configurando da mesma forma que está
+abaixo, seu novo caminho de views está pronto para ser executado.*/
+app.set('views', './app/views');
 module.exports = app;
