@@ -28,4 +28,25 @@ Já o COMMONJS, é um formato que define a construção desses módulos.
 É basicamente uma forma de escrita que permite que nosso módulo seja
 incorporado ao NodeJS de uma forma mais natural. Então nós temos que
 respeitar algumas coisas para que um simples REQUIRE(), faça com que
-o módulo seja incluído na nossa aplicação.*/
+o módulo seja incluído na nossa aplicação.
+
+Vamos montar um módulo bem simples, que apenas retorna uma string.*/
+
+//var msg = "Este módulo contém apenas uma string";
+
+/*Note que sem o MODULE.EXPORTS, o nosso módulo não funciona. De acordo
+com a convenção do CommonJS, precisamos informar o que nós queremos
+exportar do nosso módulo, para que as outras aplicações usem-no.*/ 
+
+//module.exports = msg;
+
+/*O módulo pode retornar uma função, uma string, um objeto, um boolean,
+enfim... depende do objetivo do seu módulo. No nosso caso, vai ser muito
+mais frequente retornar funções. Por exemplo, iremos repitir o
+MODULE.EXPORTS acima, só que dentro de uma função anônima. Obviamente,
+a de cima ficará comentada, para evitar conflito.*/
+
+module.exports = function(){
+    var msg = "Este módulo contém apenas uma string";
+    return msg;
+};
