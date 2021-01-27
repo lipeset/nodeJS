@@ -54,7 +54,8 @@ o parâmetro RESULT como o valor desse rótulo.
 
 Dessa forma, o nosso JSON vai ser recebido pela view como uma 
 VARIAVEL de nome NOTICIA. Ela irá se assemelhar a um array comum,
-portanto, iremos trabalhar com ela dessa forma.*/
+portanto, iremos trabalhar com ela dessa forma, acessando suas
+propriedades lá dentro da view.*/
 
 module.exports = function (app) {
     app.get('/noticias', function (req, res) {
