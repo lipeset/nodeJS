@@ -9,14 +9,16 @@ podemos fazer a sua execução em outro momento... Desta forma,
 conseguimos passar para ele um parâmetro, que é a nossa intenção nesse
 momento Abaixo temos os dois exemplos, a execção feita junto com a 
 chamada do módulo e a execução feita posteriormente.*/
-var rotaHome = require('./app/routes/home')(app);
+
+//var rotaHome = require('./app/routes/home')(app);
 //rotaHome(app); execução posterior da função
 
 /*Repetimos o processo para as outras rotas.*/
-var rotaNoticias = require('./app/routes/noticias')(app);
+
+//var rotaNoticias = require('./app/routes/noticias')(app);
 //rotaNoticias(app); execução posterior da função
 
-var rotaFormInclusaoNoticia = require('./app/routes/form_inclusao_noticia')(app);
+//var rotaFormInclusaoNoticia = require('./app/routes/form_inclusao_noticia')(app);
 //rotaFormInclusaoNoticia(app); execução posterior da função
 
 app.listen(3000, function(){
