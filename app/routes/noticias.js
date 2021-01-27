@@ -42,7 +42,19 @@ função de callback é o que será feito após a consulta ser realizada.
 A função de callback espera dois parâmetros. O 'error' e o 'result'.
 Internamente, a função query() vai disparar o callback e o primeiro
 parâmetro vai ser o 'error'. Caso ocorra algum erro, conseguiremos
-recuperá-lo graças a variável utilizada no parâmetro.*/
+recuperá-lo graças a variável utilizada no parâmetro.
+
+Para não só simplesmente cuspirmos o resultado da nossa consulta
+como um JSON sem formatação na tela, podemos pedir ao EJS, que já
+prevê esse comportamente, que construa a view juntamente com o 
+retorno da consulta. Para isso, passamos o resultado da consulta
+num formato JSON, ao pedirmos para a função render() construir
+nossa view. Então damos um nome, um rótulo para isso e passamos
+o parâmetro RESULT como o valor desse rótulo.
+
+Dessa forma, o nosso JSON vai ser recebido pela view como uma 
+VARIAVEL de nome NOTICIA. Ela irá se assemelhar a um array comum,
+portanto, iremos trabalhar com ela dessa forma.*/
 
 module.exports = function (app) {
     app.get('/noticias', function (req, res) {
@@ -56,8 +68,7 @@ module.exports = function (app) {
         });
 
         connection.query('select * from noticias', function (error, result) {
-            res.send(result);
+            res.render("noticias/noticias", {noticia : result});
         });
-        //res.render("noticias/noticias");
     });
 };
