@@ -18,3 +18,12 @@ nosso servidor.
 
 NPM = um gerenciador de pacotes JavaScript. A gente consegue de forma
 muito simples adicionar módulos a nossa aplicação utilizando o NPM.
+
+CONSIGN = É um módulo que nos permite de forma bastante simplificada
+incluir automaticamente diversos módulos da aplicação. Ele é muito 
+útil por exemplo, para a inclusão das rotas da nossa aplicação. Qualquer
+aplicação que tenha uma quantidade considerável de telas, terá também
+uma quantidade considerável de rotas e utilizar o CONSIGN vai permitir
+que tudo isso seja carregado de forma automática. Bastante útil para
+o desenvolvimento de aplicações com o design pattern MVC, que é o 
+objetivo desta aplicação.
