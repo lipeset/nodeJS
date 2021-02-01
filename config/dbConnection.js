@@ -1,6 +1,7 @@
 var mysql = require('mysql');
 
-module.exports = function () {
+var connMySQL = function () {
+    console.log('Conexão estabelecida')
     return mysql.createConnection({
         host: 'localhost',
         user: 'root',
@@ -8,3 +9,8 @@ module.exports = function () {
         database: 'portal_noticia'
     });
 }
+
+module.exports = function(){
+    console.log('Autoload carregado')
+    return connMySQL;
+};

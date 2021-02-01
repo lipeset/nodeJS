@@ -41,7 +41,10 @@ var consign = require('consign');
 
 var app = express();
 
-consign().include('app/routes').into(app);
+consign()
+    .include('app/routes')
+    .then('config/dbConnection.js')
+    .into(app);
 
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
