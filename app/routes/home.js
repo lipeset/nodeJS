@@ -14,6 +14,7 @@ usada dentro do escopo de nossa função, precisamos passa-lá como
 parâmetro. Nós precisamos receber essa informação para atuar sobre ela.
 Isso significa que no arquivo 'app.js' de alguma forma, na hora de chamar
 o nosso módulo, nós vamos precisar passar este parâmetro para ele.*/
+
 module.exports = function(app){
     app.get('/', function(req,res){
         res.render("home/index");
