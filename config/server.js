@@ -44,6 +44,7 @@ var app = express();
 consign()
     .include('app/routes')
     .then('config/dbConnection.js')
+    .then('app/models')
     .into(app);
 
 app.set('view engine', 'ejs');
