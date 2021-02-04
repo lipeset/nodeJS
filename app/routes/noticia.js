@@ -1,7 +1,12 @@
-module.exports = function (app) {    
-    app.get('/noticia', function (req, res) {
-        var connection = app.config.dbConnection();
-        connection.query('select * from noticias where id_noticia = 2', function (error, result) {
+const noticiasModel = require("../models/noticiasModel");
+
+module.exports = function (apply) {    
+    apply.get('/noticia', function (req, res) {
+
+        var connection = apply.config.dbConnection();
+        var noticiaModel = apply.app.models.noticiasModel;
+
+        noticiaModel.getNoticia(connection, function (error, result) {
             res.render("noticias/noticia", {noticia : result});
         });
     });
