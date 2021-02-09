@@ -35,4 +35,5 @@ preparar todo o ambiente para o EXPRESS, para que ele consiga executar
 de maneira correta, a inserção das informações obitidas pelo formulário
 na propriedade .body. Para instalar o BODY-PARSER é bem simples, assim
 como os outros, basta digitar 'npm install body-parser@1.17.2 --save'
-e esperar finalizar.
+e esperar finalizar. Importante ressaltar que o BODY-PARSER é um 
+middleware, ele irá atuar nos módulos de requisição e resposta.
