@@ -27,3 +27,12 @@ uma quantidade considerável de rotas e utilizar o CONSIGN vai permitir
 que tudo isso seja carregado de forma automática. Bastante útil para
 o desenvolvimento de aplicações com o design pattern MVC, que é o 
 objetivo desta aplicação.
+
+BODY-PARSER = Quando o EXPRESS preenche nossa propriedade de envio de
+formulário, precisamos estar preparados para receber tal ação. Nesse
+momento, nós utilizamos do módulo BODY-PARSER. Este por sua vez, irá
+preparar todo o ambiente para o EXPRESS, para que ele consiga executar
+de maneira correta, a inserção das informações obitidas pelo formulário
+na propriedade .body. Para instalar o BODY-PARSER é bem simples, assim
+como os outros, basta digitar 'npm install body-parser@1.17.2 --save'
+e esperar finalizar.
