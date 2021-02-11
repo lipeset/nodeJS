@@ -63,9 +63,9 @@ module.exports = function (apply) {
     apply.get('/noticias', function (req, res) {
 
         var connection = apply.config.dbConnection();
-        var noticiasModel = apply.app.models.noticiasModel;
+        var noticiasModel = new apply.app.models.NoticiasDAO(connection);
         
-        noticiasModel.getNoticias(connection, function (error, result) {
+        noticiasModel.getNoticias(function (error, result) {
             res.render("noticias/noticias", {noticias : result});
         });
     });

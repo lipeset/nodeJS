@@ -24,9 +24,9 @@ module.exports = function(apply){
         var noticia = req.body;
 
         var connection = apply.config.dbConnection();
-        var noticiasModel = apply.app.models.noticiasModel;
+        var noticiasModel = new apply.app.models.NoticiasDAO(connection);
         
-        noticiasModel.salvarNoticia(noticia, connection, function (error, result) {
+        noticiasModel.salvarNoticia(noticia, function (error, result) {
             res.redirect('/noticias');
         });
     });
