@@ -37,3 +37,13 @@ na propriedade .body. Para instalar o BODY-PARSER é bem simples, assim
 como os outros, basta digitar 'npm install body-parser@1.17.2 --save'
 e esperar finalizar. Importante ressaltar que o BODY-PARSER é um 
 middleware, ele irá atuar nos módulos de requisição e resposta.
+
+EXPRESS-VALIDATOR = Atuando como um middleware da nossa aplicação, ele
+fara a parte mais pesada da validação dos dados para que a integridade
+do formulário seja sempre a melhor possível. Com essa ferramenta,
+poderemos executar verificações individuais dos campos preenchidos no
+form e, caso exista uma exceção, conseguiremos recuperá-la e retornar
+para o usuário, informando exatamente qual é o campo que não cumpre
+os requisitos necessários. A instalação é bem simples como de costume,
+graças ao NPM e é feita utilizando o seguinte comando de prompt
+"npm install express-validator@3.2.0 -E --save"
