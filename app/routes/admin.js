@@ -15,13 +15,19 @@ parâmetro. Nós precisamos receber essa informação para atuar sobre ela.
 Isso significa que no arquivo 'app.js' de alguma forma, na hora de chamar
 o nosso módulo, nós vamos precisar passar este parâmetro para ele.*/
 
-module.exports = function(app){
-    app.get('/formulario_inclusao_noticia', function(req,res){
+module.exports = function(apply){
+    apply.get('/formulario_inclusao_noticia', function(req,res){
         res.render("admin/form_add_noticia");
     });
 
-    app.post('/noticias/salvar', function(req,res){
-        var noticias = req.body;
-        res.send(noticias);
+    apply.post('/noticias/salvar', function(req,res){
+        var noticia = req.body;
+
+        var connection = apply.config.dbConnection();
+        var noticiasModel = apply.app.models.noticiasModel;
+        
+        noticiasModel.salvarNoticia(noticia, connection, function (error, result) {
+            res.redirect('/noticias');
+        });
     });
 };
