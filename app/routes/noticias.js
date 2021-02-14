@@ -61,12 +61,20 @@ propriedades lá dentro da view.*/
 
 module.exports = function (apply) {
     apply.get('/noticias', function (req, res) {
-
         var connection = apply.config.dbConnection();
         var noticiasModel = new apply.app.models.NoticiasDAO(connection);
         
         noticiasModel.getNoticias(function (error, result) {
             res.render("noticias/noticias", {noticias : result});
+        });
+    });
+
+    apply.get('/noticia', function (req, res) {
+        var connection = apply.config.dbConnection();
+        var noticiaModel = new apply.app.models.NoticiasDAO(connection);
+
+        noticiaModel.getNoticia(function (error, result) {
+            res.render("noticias/noticia", {noticia : result});
         });
     });
 };
