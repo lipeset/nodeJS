@@ -17,7 +17,7 @@ o nosso módulo, nós vamos precisar passar este parâmetro para ele.*/
 
 module.exports = function(apply){
     apply.get('/formulario_inclusao_noticia', function(req,res){
-        res.render("admin/form_add_noticia");
+        res.render("admin/form_add_noticia", {validacao : {}, noticia : {}});
     });
 
     apply.post('/noticias/salvar', function(req,res){
@@ -32,10 +32,8 @@ module.exports = function(apply){
 
         var erros = req.validationErrors();
 
-        console.log(erros);
-
         if(erros){
-            res.render("admin/form_add_noticia", {validacao : erros});
+            res.render("admin/form_add_noticia", {validacao: erros, noticia: noticia});
             return;
         }
 
