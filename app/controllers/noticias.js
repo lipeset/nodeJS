@@ -10,8 +10,9 @@ module.exports.noticias = function (apply, req, res) {
 module.exports.noticia = function (apply, req, res) {
     var connection = apply.config.dbConnection();
     var noticiaModel = new apply.app.models.NoticiasDAO(connection);
+    var id_noticia = req.query;
 
-    noticiaModel.getNoticia(function (error, result) {
+    noticiaModel.getNoticia(id_noticia, function (error, result) {
         res.render("noticias/noticia", { noticia: result });
     });
 }
